@@ -51,9 +51,13 @@
           box-sizing: border-box;
 }
 
-html, body {
-  overflow-x: hidden;
+body {
+  overflow: hidden;
 }
+
+/* html, body {
+  overflow-x: hidden;
+} */
 
 .container {
   padding: 0 120px;
