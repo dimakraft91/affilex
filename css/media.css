@@ -491,7 +491,7 @@
     height: auto;
   }
   .footer__img img {
-    top: unset;
+    top: 4px;
   }
   .footer__nav {
     -webkit-box-ordinal-group: 3;
