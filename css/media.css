@@ -93,7 +93,7 @@
     width: 85%;
   }
   .privacy__container {
-    height: 85%;
+    height: 86%;
   }
   .header {
     height: 84px;
@@ -433,10 +433,7 @@
     position: relative;
     z-index: 10;
   }
-  .footer:after {
-    content: "";
-    background-color: #ECECEC;
-  }
+
   .footer__top {
     background-color: #ECECEC;
   }
