@@ -93,7 +93,7 @@
     width: 85%;
   }
   .privacy__container {
-    height: 84vh;
+    height: 85%;
   }
   .header {
     height: 84px;
@@ -495,7 +495,7 @@
     height: auto;
   }
   .footer__img img {
-    top: 5px;
+    top: 4px;
   }
   .footer__nav {
     -webkit-box-ordinal-group: 3;
