@@ -1,0 +1,78 @@
+
+
+.open{
+    display: flex !important;
+}
+
+.close {
+    display: none!important;
+}
+
+.fade {
+    display: none;
+}
+
+.burger{
+    display: none;
+    position: relative;
+    z-index: 9999;
+    align-items: center;
+    justify-content: flex-end;
+    width: 34px;
+    height: 22px;
+}
+
+.burger span{
+    height: 2px;
+    width: 34px;
+    transform: scale(1);
+    background-color: #000;
+}
+
+.burger::before, .burger::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 34px;
+    background-color: #000;
+    transition: all 0.3s ease 0s;
+}
+
+.burger::before { top: 0 }
+
+.burger::after { bottom: 0 }
+
+
+/* Добавляем класс active для анимации иконки бургера */
+.burger.active span { transform: scale(0) }
+
+.burger.active::before{
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after{
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
+
+
+/* При разрешении экрана 480px и ниже, выводим на экран иконку бургера */
+@media (max-width: 480px) {
+
+    .burger { display: flex }
+
+    .popup{
+        display: none;
+        position: fixed;
+        top: 0; bottom: 0; left: 0; right: 0;
+        z-index: 50;
+        overflow-y: hidden;
+        animation: burgerAnimation 1.4s;
+    }
+}
+
+@keyframes burgerAnimation {
+    from {opacity: 0}
+    to {opacity: 1}
+}
