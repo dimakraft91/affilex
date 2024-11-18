@@ -122,7 +122,7 @@
     const textPath = text.querySelector("textPath");
     const pos = parseFloat(textPath.getAttribute("startOffset")) || 0;
 
-    const newPosition = pos > -105 ? pos - 10 : pathLength;
+    const newPosition = pos > -245 ? pos - 10 : pathLength;
     textPath.setAttribute("startOffset", newPosition);
 
     // Получаем текст из textPath
